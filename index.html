@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- обновление страницы  -->
     <meta http-equiv="refresh" content="">
-    <title>ssg</title>
+    <title>pasha</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="dist/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
         }
     </style>
     <style>
-        <!-- увеличение изображения при наведении -->
+        /* <!-- увеличение изображения при наведении --> */
         .logo {
             transition: transform 0.3s ease;
         }
@@ -264,6 +264,7 @@
                     overflow:hidden;
                     position: relative;
                 }
+                @media (max-width:1200px) {.KnopkaUsl{flex: none; } }
                 .KnopkaUsl:hover img{
                     transform:scale(1.04)
                 }
@@ -283,11 +284,11 @@
             .ContainerSecond img {}
         </style>
     </div> 
-    <div class="" style="width: 70%; height: 0.3px; background-color: red;margin: 0 auto; position: relative; bottom: 0px; "> </div>
+    <div class="div_12" style="width: 70%; height: 0.3px; background-color: red;margin: 0 auto; position: relative; bottom: 0px; "> </div>
 
     <div>
-                <div class="Usltxt" style="margin:40px">
-                        <h1> Мы специализируемся на следующих видах объектов </h1>
+                <div class="Usltxt " style="margin:40px">
+                        <h1> Мы специализируемся на следующих видах объектов: </h1>
                 </div>
                 <div class="Con_Vid_ob Ustxtunder">
             <div class="left-part ">
@@ -343,7 +344,7 @@
         <div style="background-color:rgb(255, 255, 255);">
             <div class="div_grid_svyaz">
                 <div class="div_grid_1_txt montserrat-1">
-                    <div>
+                    <div class="zxc123">
                     <h1 class="Usltxt"style="margin-top: 100px;margin-bottom: 50px;  " > СВЯЖИТЕСЬ С НАМИ, МЫ ОТВЕТИМ НА ВСЕ ИНТЕРЕСУЮЩИЕ ВОПРОСЫ</h1>
                     <span style="font-weight: 600;"> Позвоните или напишите нам: </span>
                     <p> asdadsads@mail.ru </p>
@@ -389,15 +390,21 @@
                     display: grid;
                     grid-template-columns: 50% 50%;
                     margin: 0 auto;
-                    width: 70%;
+                    width: 60%;
                     height: auto;
                  }
-
+                 .div_grid_1_txt {justify-content: center; align-items: center;}
                  .error-message {font-size: 10px; }
                  /* .div_grid_1_txt p { } */
                  button[type="submit"] {margin-top: 20px; width: 40%; margin-bottom: 70px;}
                  .form_1 [type="text"],[type="tel"] {height: 60px; }
                  .div_grid_svyaz .Usltxt {color: black; font-size: 20px;text-align: left; width: 500px;}
+
+                 @media(max-width:1200px){
+                    .div_grid_svyaz {display:flow-root ;}
+                    .div_grid_svyaz .Usltxt {font-size: 20px;line-height: 1.4; text-align: left;width: auto;height: fit-content; }
+                    
+                 }
             </style>
             <script>
                             document.getElementById("form1").addEventListener("submit", function(event) {
@@ -486,7 +493,7 @@
 
 
 
-    <div style="background-color: #434343;" class="flex">
+    <!-- <div style="background-color: #434343;" class="flex">
         <div class="con container">
             <div class="car-img ">
                 <img src="pez.jpg" alt="Description of Image" class=" " style="  ">
@@ -576,16 +583,16 @@
                 moveCarousel(0); // Переместить карусель на текущий индекс при изменении размера экрана
             });
         </script>
-    </div>
+    </div> -->
 
 
 
    <div class="anal" style="background-color: rgba(255, 255, 255, 0.997);">
     <div class="halfunder" > </div>
-    <div class="footer_div" style="margin: 0 auto; width: 70%;height: 300px; ">
+    <div class="footer_div" style="height: auto; ">
        <div class="marg12">
-        <h2> FB ink.</h2>
             <div class="dda">
+                <h2> FB ink.</h2>
             <p> © 2023 Все права защищены</p>
             <a> Политика конфиденциальности </a>
             <p> ИНН 6234076824</p>
@@ -593,8 +600,8 @@
             </div>
         </div>
        <div class="marg12"> 
-        <h2> Наша компания</h2>
             <div class="dda" >
+                <h2> Наша компания</h2>
             <a> О компании</a> 
             <a> Проекты</a> 
             <a> Партнеры</a> 
@@ -603,8 +610,8 @@
             </div>
         </div>
         <div class="marg12">
-        <h2>Услуги</h2> 
             <div class="dda">
+                <h2>Услуги</h2> 
             <a> Проектирование</a>
             <a> Строительство</a>
             <a> Комплектация</a>
@@ -612,10 +619,10 @@
             <a> Благоустройство</a> 
             </div>
         </div>
-        <div class="marg12"> 
-            <h2>Услуги</h2> 
+        <div class="marg12" style="margin-bottom: 100px;"> 
             <div class="dda">
-            <a> КРОВЕЛЬНЫЕ РАБОТЫ</a>
+                <h2>Услуги</h2> 
+            <a> Кровельные работы</a>
             <a> sdad</a>
             <a> sdad</a>
             <a> sdad</a>
@@ -626,28 +633,33 @@
     </div>
 
     <style>
-        .footer_div {background-color: rgb(255, 255, 255) ;display: grid;grid-template-columns: 25% 25% 25% 25%; }
+        .footer_div {background-color: rgb(255, 255, 255) ;display: grid;grid-template-columns: 25% 25% 25% 25%;width: 70%; margin: 0 auto;  }
+        .dda {margin-top: 10px; height: auto;display: grid; justify-content: center; align-items: center; }
         
-        .dda {margin-top: 10px; height: auto;display: grid;  }
-
         .footer_div h2 {
             font-family: "Montserrat", sans-serif; 
             font-weight: 500; color: rgb(67, 61, 61);
-            font-size: 20px;
+            font-size: 20px; width: auto;
         }
         .footer_div a {
             cursor: pointer;
             
         }
         .footer_div a:hover{
-            color: blue; font-weight: 700;
+            color: blue; font-weight: 600; 
         }
-
 
         .halfunder {margin: 0 auto; width: 50%; background-color: rgb(89, 84, 84); height: 1px;}
         
         .marg12 {margin-top: 50px; }
-        .footer_div p, .footer_div a {height: 30px;width:fit-content ; ;font-family: "Montserrat", sans-serif; font-size: 15px;text-align: left;  }
+        .footer_div p, .footer_div a {height: auto;width:auto ; ;font-family: "Montserrat", sans-serif; font-size: 15px;text-align: left;  }
+
+        @media (max-width:1200px) {
+         .footer_div { display: flex;flex-wrap: wrap;width: 100%; }   
+         .marg12{ flex:1 1 50%;} 
+         .footer_div p, .footer_div a {height: auto; font-size: 10px;}
+         .dda{ justify-content:left; align-items: center;}
+        }
     </style>
    </div>
 

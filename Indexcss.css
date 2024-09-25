@@ -21,7 +21,7 @@
     z-index: 55550;
     font-size: 14px;
     
-}  @media (max-width:1200px) {.nav-menu { }}
+}  @media (max-width:1200px) {.nav-menu {}}
 
 .nav-links {
     display: flex;
@@ -31,8 +31,7 @@
     
 }       
         .nav-links a:nth-child(2) {margin-left:500px}
-        @media (max-width:1200px) {.nav-links {font-size:10px;}}
-        @media (max-width:1200px) {.nav-links a:nth-child(2) {margin-left: 100px;}}
+        
         
 
 .hamburger {
@@ -358,14 +357,14 @@ form {
     width: 100%;
     margin:auto ;
 }  
-            @media (max-width:1200px) {.intoG {margin:auto   }  }
+            @media (max-width:1200px) {.intoG {margin:auto;   }  }
 
-            @media (max-width: 767px) {
+            /* @media (max-width: 767px) {
                 .intoG {
                     max-width: 200px;
                     margin-left: 250px
                 }
-            }
+            } */
 
 .intoI {
     display: flex;
@@ -458,9 +457,10 @@ form {
         margin-right: 20px;
         gap: 10px;   
     }
-                @media (max-width:1200px) {.Con_Vid_ob{
-                    display:block;
-                                                               }                }
+                @media (max-width:1200px) {
+                    .Con_Vid_ob{ display:block;}                
+                    .Usltxt h1 {font-size: 30px;font-weight: 600;margin-top: 60px; margin-bottom: -20px;}
+                }
         .Con_Vid_ob img {
             object-fit: cover;
             height: 400px;
@@ -550,4 +550,11 @@ form {
             .txt3_mar {margin-top:30px ; }
         .TxtItapi .TxtFon  {position:center;text-align:left ;z-index:1 ; font-size:250px; color:rgb(122, 122, 122)}
         .TxtItapi .txt2, .txt3 {left:43%  }
+
+            @media (max-width:1200px) {
+                .DivItapi {width: 100%;}
+                .DivAll div {flex:1 1 100%}
+                .TxtItapi .txt2, .txt3 {width:fit-content ; }
+                .TxtItapi .TxtFon {font-size: 150px;}
+            }
         
